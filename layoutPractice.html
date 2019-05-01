@@ -21,19 +21,18 @@
     .leftColumn {
         display: inline-block;
         background-color:lightgray;
-        width: 100%;
+        width: 33%;
         height: 350px;
         text-align: left;
+        
     }
     .rightColumn {
-        /* display: inline-block; */
-        /* position: right; */
         background-color:rgb(54, 54, 54);
         width: 67%;
         height: 350px;
         text-align: right;
-        /* z-index 10; */
         float: right;
+        margin-right: 0;
     }
 
     .row {
@@ -47,13 +46,13 @@
         This is a header
     </header>
     <div class="row">
-        <div class="leftColumn">
+        <span class="leftColumn">
             left Column
-            <div class="rightColumn">
+            
+        </span>
+        <span class="rightColumn">
                 right Column
-            </div>
-        </div>
-        
+        </span>
     </div>
     <footer>
         This is the footer
