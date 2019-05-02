@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    
+    .myDiv{
+        background-color: red;
+        color: white;
+        height: 300px;
+        width: 250px;
+        display: inline-block;
+
+    }
+
+    @media screen and (min-width: 800px){
+        .myDiv{
+            background-color: blueviolet;
+            height: 200px;
+            margin-bottom: 15px;
+        }
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="myDiv">
+            hello world
+        </div>
+        <div class="myDiv">
+            hello world
+        </div>
+    </div>
+
+</body>
+</html>

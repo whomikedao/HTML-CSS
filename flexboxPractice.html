@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: cadetblue;
+            color: white;
+            font-weight: bold;
+            font-size: 30px;
+            margin: 5px;
+            /* display: inline-block;
+            text-align: center;
+            line-height: 190px; */
+
+        }
+
+        .hg1{
+            height: 150px;
+        }
+        .hg2{
+            height: 250px;
+        }
+        .hg3{
+            height: 100px;
+        }
+        .hg4{
+            height: 80px;
+        }
+
+        .container{
+            width: 100%;
+            height: 600px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: bisque;
+            flex-wrap: wrap;
+        }
+
+        .order1{
+            order: 1;
+        }
+
+        .fg1{
+            flex-grow: 1;
+
+        }
+
+        .fg2{
+            flex-grow: 2;
+
+        }
+
+        .fg3{
+            flex-grow: 3;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="box hg1 fg3">1</div>
+        <div class="box hg2">2</div>
+        <div class="box hg3">3</div>
+        <div class="box hg4">4</div>
+        <div class="box hg5">5</div>
+        <div class="box hg4">4</div>
+        <div class="box hg5">5</div>
+        <div class="box hg4">4</div>
+        <div class="box hg5">5</div>
+
+    </div>
+
+</body>
+</html>

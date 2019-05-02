@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    
+        .flexbox{
+            display: flex;
+        }
+
+        .spaceBetween{
+            justify-content: space-between;
+        }
+        
+        nav{
+            background-color: cornflowerblue;
+            padding: 0px 10px 0px 10px;
+
+        }
+
+        .navspace{
+            background-color:crimson;
+            justify-content: space-between;
+        }
+
+        li{
+            list-style: none;
+
+        }
+
+        a{
+            display: block;
+            text-decoration: none;
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
+
+        .fg1{
+            flex-grow: 1;
+        }
+
+        .centerImage{
+            background-image: url(https://hdwallsource.com/img/2018/2/cheetos-wallpaper-background-62674-64652-hd-wallpapers.jpg);
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+            <div>
+                <a href="https://hdwallsource.com/img/2018/2/cheetos-wallpaper-background-62674-64652-hd-wallpapers.jpg">Return Home</a>
+            </div>
+    </div>
+
+    <nav class="flexbox spaceBetween">
+            <ul class="fg1">
+                <li><a href="#">Company Name</a></li>
+            </ul>
+            <ul class="flexbox spaceBetween fg1">
+                <li class=""><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+    </nav>
+
+
+</body>
+</html>

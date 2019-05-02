@@ -18,18 +18,22 @@
             padding: 30px;
             text-align: center;
         }
-        .parent{
-            background-color: #F3FFBD;
-            height: 80%;
-            top: 10%;
-            text-align: center;
+        .clear{
+            clear: both;
         }
         .sidebar{
             background-color: #247BA0;
-            float: inherit;
-            width: 300px;
+            float: left;
+            padding: 300px;
+            width: 33.33%;
+
+        }
+
+        .maincontent{
+            background-color: #FF1654;
+            float: right;
             height: 100%;
-            top: ;
+
 
         }
     
@@ -41,15 +45,15 @@
         Header
     </header>
 
-    <div class="parent">
-        <div class="sidebar">
+    <div class="clear">
+        <span class="sidebar">
             Sidebar Column 1 300px content content content 
             content content content content content content 
             content content content content content content 
             content content content content content content 
             content content content content content content
-        </div>
-        <div class="maincontent">
+        </span>
+        <span class="maincontent">
             main content
             content content content content content content 
             content content content content content content 
@@ -58,7 +62,7 @@
             content content content content content content 
             content content content content content content 
             content content content content content content
-        </div>
+        </span>
     </div>
 </body>
 </html>
