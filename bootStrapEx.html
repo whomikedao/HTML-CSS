@@ -10,10 +10,35 @@
     <style>
         
         nav{
-            background-color:salmon;
+
+            background-color: #FF1654;
             color: white;
 
         }
+
+        .center{
+            text-align: center;
+            color: black;
+            list-style-position: inside;
+        }
+
+        .paleYellow{
+            background-color: #F3FFBD;
+            color: black;
+        }
+
+        .textBigger{
+            font-size: 70px;
+        }
+        
+        .row{
+            background-color: #B2DBBF;
+        }
+        img{
+            height: 80%;
+            width: 50%;
+        }
+        
         
     </style>
 
@@ -22,75 +47,84 @@
   </head>
   <body>
 
-    <nav>
+    <nav class="navbar">
         Our company
-        <div class="rightLinks">
-            <div>
-                Home
-            </div>
-            <div>
-                Products
-            </div>
-            <div>
-                Company
-            </div>
-            <div>
-                Blog
-            </div>
+        <div class="navbar">
+            <li class="nav-link">
+                <a href="https://petrolicious.com/">Home</a>
+            </li>
+            <li class="nav-link">
+                    <a href="https://petrolicious.com/">Products</a>
+            </li>
+            <li class="nav-link">
+                    <a href="https://petrolicious.com/">Company</a>
+            </li>
+            <li class="nav-link">
+                    <a href="https://petrolicious.com/">Blog</a>
+            </li>
         </div>  
     </nav>
 
-    <div>
+    <div class="container-fluid">
 
-        We Are Awesome
+        <div class="center textBigger border-bottom border-dark">We Are Awesome</div>
 
     </div>
 
-    <div>
+    <div>  
 
-        Awesomeness
-        <div class="item1">
-            <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
+        <div class="center paleYellow textBigger border-bottom border-dark">Awesome</div>
+        <div class="row border-bottom border-dark">
 
-            </ul>
-        </div>
+            <div class="col-4 center">
+                <ul>
+                    Awesomeness
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
 
-        <div class="item2">
-
-            <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-            </ul>
-
-        </div>
-
-        <div class="item3">
-
-            <ul>
-                <li>Item 1</li>
-                <li>Item 3</li>
-                <li>Item 4</li>
-            </ul>
-
-        </div>
-
-        <div class="imageContainer">
-
-            <div>
-                <img src="" alt="">
-            </div>
-            <div>
-                <img src="" alt="">
+                </ul>
             </div>
 
+            <div class="col-4 center">
+
+                <ul class="">
+                    Awesomeness
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+
+            </div>
+
+            <div class="col-4 center">
+
+                <ul>
+                    Awesomeness
+                    <li>Item 1</li>
+                    <li>Item 3</li>
+                    <li>Item 4</li>
+                </ul>
+
+            </div>
         </div>
 
-        <footer>
-            Blank
+        <div class="imageContainer row border-bottom border-dark">
+
+
+            <div class="col-6 left">
+                <img src="https://d39a3h63xew422.cloudfront.net/wp-content/uploads/2019/05/02111125/rsz_gordon_murray_cbe_001-1000x675.jpg" alt="">
+                Person 1
+            </div>
+            <div class="col-6 center">
+                <img src="https://d39a3h63xew422.cloudfront.net/wp-content/uploads/2019/05/01034657/rsz_hrh_the_princess_royal_with_her_middlebridge_scimitar-1000x750.jpg" alt="">
+                Person 2
+            </div>
+
+        </div>
+
+        <footer class="row border-bottom border-dark">
+            Footer
         </footer>
 
     </div>
